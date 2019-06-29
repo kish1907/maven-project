@@ -27,12 +27,12 @@ http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/cu
 		<ee:transform doc:name="Transform Message" doc:id="48b15791-87e8-45f9-92d9-d71d797f9b5c" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/json 
+output application/json
 ---
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<vm:publish doc:name="Publish" doc:id="20340a5c-9f4b-4da5-aa90-b96b8b2abc12" config-ref="VM_Config" queueName="myQueue"/>
-		<logger level="INFO" doc:name="Logger" doc:id="f2342672-d262-4d11-baf0-10bb59073cd6" />
+		<logger level="INFO" doc:name="Logger" doc:id="f2342672-d262-4d11-baf0-10bb59073cd6" message="#[payload]"/>
 	</flow>
 </mule>
