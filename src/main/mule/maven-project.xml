@@ -19,6 +19,7 @@ http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/cu
 			<vm:queue queueName="myQueue" />
 		</vm:queues>
 	</vm:config>
+	
 	<flow name="mavenFlow" doc:id="01ef5353-8578-410c-965a-517eb0ada895" >
 		<http:listener doc:name="Listener" doc:id="e611608a-2c64-4cc0-a744-739925b0dc4e" config-ref="HTTP_Listener_config" path="/hello"/>
 		<db:select doc:name="Select" doc:id="902a0e20-9cde-44c4-98e8-5bdf6ca4fca7" config-ref="Database_Config">
