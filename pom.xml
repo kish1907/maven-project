@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<app.runtime>4.2.0</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
-		<mysql.version>8.0.16</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 	</properties>
 
 	<build>
